@@ -2,10 +2,12 @@
 
 # Hyperledger Fabric Client Experiment
 
+This experiment measures the growth of the Hyperledger Fabric world state (LevelDB) size when inserting keys using different patterns (sequential, random, shortprefix). It iteratively inserts a batch of keys (`round_step`) until a `total` number of keys are inserted for each pattern, measuring the database size (`du -sb`) before and after each batch.
+
 ```
 git clone https://github.com/3e91b5/fabric-client-experiments.git
 cd client
-./run_experiment.sh && python3 draw_graph.py
+./run_experiment.sh {round_step} {total} && python3 draw_graph.py
 ```
 
 

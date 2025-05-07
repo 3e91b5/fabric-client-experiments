@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
-# =============== reset_and_run_experiment.sh ===============
+
 # 전체 네트워크 초기화 + 패턴별 월드스테이트 크기 실험 (du 만 측정)
 # 경로 기준: fabric-samples/  (itemcc-go, test-network, client 폴더가 있어야 함)
 
 set -euo pipefail
 
 ### 실험 파라미터 ###########################################
-ROUND_STEP=10000       # 한 번에 삽입할 키 수
-TOTAL=1000000           # 패턴당 총 키 수
+if [ "$#" -ne 2 ]; then
+    echo "사용법: $0 <ROUND_STEP> <TOTAL>"
+    exit 1
+fi
+
+ROUND_STEP=$1       # 한 번에 삽입할 키 수
+TOTAL=$2           # 패턴당 총 키 수
 # PATTERNS=(sequ rand hash)
 PATTERNS=(sequ rand shortprefix)
 ##############################################################
