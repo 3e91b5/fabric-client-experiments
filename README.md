@@ -3,7 +3,7 @@
 # Hyperledger Fabric Client Experiment
 
 ```
-git clone https://github.com/3e91b5/https://github.com/3e91b5/fabric-client-experiments.git
+git clone https://github.com/3e91b5/fabric-client-experiments.git
 cd client
 ./run_experiment.sh && python3 draw_graph.py
 ```
