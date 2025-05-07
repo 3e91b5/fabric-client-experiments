@@ -1,5 +1,14 @@
 [//]: # (SPDX-License-Identifier: CC-BY-4.0)
 
+# Hyperledger Fabric Client Experiment
+
+```
+git clone https://github.com/3e91b5/https://github.com/3e91b5/fabric-client-experiments.git
+cd client
+./run_experiment.sh && python3 draw_graph.py
+```
+
+
 # Hyperledger Fabric Samples
 
 You can use Fabric samples to get started working with Hyperledger Fabric, explore important Fabric features, and learn how to build applications that can interact with blockchain networks using the Fabric SDKs. To learn more about Hyperledger Fabric, visit the [Fabric documentation](https://hyperledger-fabric.readthedocs.io/en/latest).
